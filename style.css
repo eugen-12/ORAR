@@ -1,32 +1,82 @@
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+}
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar {
+    width: 30%;
     padding: 20px;
-    color: #333;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
 }
-h2 {
-    text-align: center;
-    color: #002147;
-    padding: 15px;
+.sidebar h1 {
+    font-size: 20px;
     margin-bottom: 20px;
-    text-transform: uppercase;
 }
-h3{
+.sidebar label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.sidebar input,
+.sidebar select {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.butoane {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.butoane button {
+    flex: 1;
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid #aaa;
+    background-color: white;
+    cursor: default;
+}
+.mini-tabel {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+.mini-tabel td {
+    border: 1px solid #999;
+    padding: 5px;
     text-align: center;
-    font-size: 18px;
-    margin-top: -10px;
-    margin-bottom: 30px;
-    color: #333;
+}
+.orar {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.orar h2, .orar h3 {
+    text-align: center;
+    margin: 0 0 10px 0;
 }
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 th, td {
-    border: 1px solid #ddd;
-    padding: 12px;
+    border: 1px solid #ccc;
+    padding: 8px;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
+}
+th {
+    background-color: #f2f2f2;
+}
+td:first-child {
+    background-color: #2f9139;
+    color: white;
+    font-weight: bold;
 }
